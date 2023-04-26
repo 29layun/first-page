@@ -11,9 +11,15 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #101116;
 }
+#particles-js{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
 
 header {
-    background-image: url('images/bg.jpg');
+    background-image: url('../images/bg.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,6 +27,8 @@ header {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
+    z-index: 99;
 }
 .menu {
     position: absolute;
@@ -181,7 +189,7 @@ header {
 .box-1,
 .box-2,
 .box-3 {
-    background-image: url('images/bg-p.jpg');
+    background-image: url('../images/bg-p.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -277,11 +285,11 @@ header {
     color: #FDFDFD;
 }
 .info {
-    background-image: linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url('images/bg-info.jpg');
+    background-image: linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url('../images/bg-info.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh;
+    height: 78vh;
 }
 .info-content {
     display: flex;
@@ -327,7 +335,7 @@ header {
     top: -103px;
 }
 .info-img img {
-    width: 650px;
+    width: 580px;
 }
 .footer {
     padding: 150px 0 100px 0;
@@ -444,7 +452,7 @@ header {
     }
     .info {
         padding: 30px;
-        height: 70vh;
+        height: 90vh;
     }
     .info-txt h2 {
         font-size: 40px;
